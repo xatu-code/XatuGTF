@@ -22,7 +22,7 @@ int main(int argc, char* argv[]){
     std::string outp_file = "InputFiles/Pho_PBE0_1D_0f.outp";
     int ncells = 43;                                 //Number of H(R) and S(R) matrices taken into account from the .outp file
     std::string bases_file = "InputFiles/Bases_custom.txt";
-    std::string savefile = "w050custom";        //Result will be saved in file Results/1-Integrals/o2Mat_savefile.o2c & o3Mat_savefile.o3c
+    std::string savefile = "custom";        //Result will be saved in file Results/1-Integrals/o2Mat_savefile.o2c & o3Mat_savefile.o3c
     double omega = 0.5;                               //Attenuation parameter in erfc(omega*|r-r'|), in atomic units (length^-1)
     int nR = 100;                                     //Minimum number of direct lattice vectors for which the 2-center overlap integrals will be computed
     int nR2 = 100;                                    //Square root of the minimum number of direct lattice vectors for which the 3-center overlap integrals will be computed
