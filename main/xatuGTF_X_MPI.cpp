@@ -22,7 +22,7 @@ int main(int argc, char* argv[]){
     // INPUT PARAMETERS /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     std::string outp_file = "InputFiles/Pho_PBE0_1D_0f.outp"; 
     int ncells = 43;                                 //Number of H(R) and S(R) matrices taken into account from the .outp file
-    std::string exciton_file = "InputFiles/Ph_88x66_alpha.txt";
+    std::string exciton_file = "InputFiles/Pho_88x66_alpha.txt";
     uint metric = 0;                                  //0 for the overlap metric, 1 for the attenuated Coulomb metric (integrals must be pre-computed)
     std::string intName = "custom";    //For the metric (2C & 3C) and Ewald/Coulomb (2C)
     std::string savefile = "custom_100x100";                     //Result will be saved in file Results/2-BSEHamiltonian/savefile.exch
