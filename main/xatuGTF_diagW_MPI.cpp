@@ -1,6 +1,5 @@
 // #define ARMA_ALLOW_FAKE_GCC
 #include <mpi.h>
-#include <tclap/CmdLine.h>
 #include "xatu.hpp"
 
 int main(int argc, char* argv[]){
