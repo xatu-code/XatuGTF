@@ -1,0 +1,13 @@
+# mode
+GAUSSIAN
+# label
+hBN
+# alpha
+0.005
+# nki
+88 66
+# nkipol
+8 6
+# bandList
+-1 0 1 2
+#
