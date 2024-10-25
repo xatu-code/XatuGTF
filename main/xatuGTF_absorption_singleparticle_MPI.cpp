@@ -1,6 +1,5 @@
 // #define ARMA_ALLOW_FAKE_GCC
 #include <mpi.h>
-#include <tclap/CmdLine.h>
 #include "xatu.hpp"
 
 // Based on the Delta function (real part of i*Lorentzian), computes only the first ndim components in the diagonal of the absorption tensor.
