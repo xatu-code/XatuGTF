@@ -19,11 +19,11 @@ int main(int argc, char* argv[]){
     }
 
     // INPUT PARAMETERS /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    std::string outp_file = "InputFiles/hBN_HSE06.outp";
-    int ncells = 179;                                 //Number of H(R) and S(R) matrices taken into account from the .outp file
-    std::string bases_file = "InputFiles/Bases_NEW_def2-TZVPPD-RIFIT.txt";
-    std::string savefile = "def2-TZVPP-RIFIT";        //Result will be saved in file Results/1-Integrals/dipoleMat_savefile.dip
-    int nR = 200;                                     //Minimum number of direct lattice vectors for which the dipole integrals will be computed
+    std::string outp_file = "InputFiles/Pho_PBE0_1D_0f.outp";
+    int ncells = 43;                                 //Number of H(R) and S(R) matrices taken into account from the .outp file
+    std::string bases_file = "InputFiles/Bases_custom.txt";
+    std::string savefile = "custom";        //Result will be saved in file Results/1-Integrals/dipoleMat_savefile.dip
+    int nR = 120;                                     //Minimum number of direct lattice vectors for which the dipole integrals will be computed
     int tol = 8;                                      //Threshold tolerance for the integrals: only entries > 10^-tol are stored
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
