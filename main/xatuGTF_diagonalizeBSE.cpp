@@ -6,13 +6,13 @@
 int main(int argc, char* argv[]){
 
     // INPUT PARAMETERS /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    std::string diag_file = "BSE";     //Diagonal BSE Hamiltonian file, excluding exchange
-    std::string offdiag_file = "BSE";  //Off-diagonal BSE Hamiltonian file, excluding exchange
-    std::string X_file = "BSE";        //Exchange file, irrelevant if exchange = triplet
-    std::string exchange = "singlet";  //Exchange factor: "singlet" (x2), "SOC" (x1), "triplet" (x0). For triplet, exchange is not read
-    std::string savefile = "BSE";      //Results will be saved in file Results/3-Excitons/savefile.energ & savefile.eigvec
-    bool writeStates = true;           //Store eigenvectors or not
-    arma::uvec cols_eigvec = arma::regspace<arma::uvec>(0,9);  //Indices of the eigenvectors to store, irrelevant if writeStates = false
+    std::string diag_file = "custom_100x100";     //Diagonal BSE Hamiltonian file, excluding exchange
+    std::string offdiag_file = "custom";          //Off-diagonal BSE Hamiltonian file, excluding exchange
+    std::string X_file = "custom_100x100";        //Exchange file, irrelevant if exchange = triplet
+    std::string exchange = "singlet";          //Exchange factor: "singlet" (x2), "SOC" (x1), "triplet" (x0). For triplet, exchange is not read
+    std::string savefile = "BSE_singlet";      //Results will be saved in file Results/3-Excitons/savefile.energ & savefile.eigvec
+    bool writeStates = true;                   //Store eigenvectors or not
+    arma::uvec cols_eigvec = arma::regspace<arma::uvec>(0,3199);  //Indices of the eigenvectors to store, irrelevant if writeStates = false
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     xatu::printHeaderGTFprovisional();
