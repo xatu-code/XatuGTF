@@ -400,9 +400,9 @@ arma::mat Lattice::generateRlist_supercell(const uint32_t nR, const std::vector<
     uint normRatio = std::ceil(0.5*arma::max(norms_Ri) / arma::min(norms_Ri)); 
     // Conservative estimate to make sure that none of the first n vectors is left out
     int32_t RindmaxAux = std::ceil(3*normRatio*std::pow(nR,1./(double)ndim));
-	RindmaxAux += 1 - (RindmaxAux % 2);
+    RindmaxAux += 1 - (RindmaxAux % 2);
 
-	arma::mat combs = ( generateCombinations({RindmaxAux}, true) ).t();
+    arma::mat combs = ( generateCombinations({RindmaxAux}, true) ).t();
     arma::mat generated_Rlist = Rbasis_supercell*combs;
     arma::rowvec generated_norms = arma::sqrt( arma::sum(generated_Rlist % generated_Rlist ,0) );
 
