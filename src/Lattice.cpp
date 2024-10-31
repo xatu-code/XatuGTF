@@ -9,8 +9,8 @@ namespace xatu {
 Lattice::Lattice(const ConfigurationSystem& SystemConfig){
 
     this->ndim_   = SystemConfig.ndim;	
-	this->Rbasis_ = SystemConfig.Rbasis;
-	computeUnitCellVolume();
+    this->Rbasis_ = SystemConfig.Rbasis;
+    computeUnitCellVolume();
     calculateGbasis();
 
 }
