@@ -253,7 +253,7 @@ double IntegralsCoulomb2C::Boysfun(const int n, const double arg){
     if(arg < 3.1e-10){
         return (double)1./(2*n + 1);
     }
-    else if(arg > 19.785){
+    else if(arg > 26.5){
         return doubleFactorial(2*n-1)*std::pow(2,-n-1)*std::sqrt(PI*std::pow(arg,-2*n-1));
     }
     else{
